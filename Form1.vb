@@ -95,7 +95,7 @@
             iBiayaJabatan = iPenghasilanBrutoSetahun * TARIF_BIAYA_JABATAN
         End If
 
-        Return iPenghasilanBrutoSetahun - iBiayaJabatan - iIuran
+        Return iPenghasilanBrutoSetahun - iBiayaJabatan - (iIuran * 12)
 
     End Function
 
