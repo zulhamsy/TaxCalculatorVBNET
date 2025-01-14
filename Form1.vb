@@ -4,6 +4,11 @@
     Const TARIF_BIAYA_JABATAN = 0.05
     Const MAX_BIAYA_JABATAN = 6000000
 
+    Private Property PenghasilanBrutoSetahun As Integer
+    Private Property IuranPensiun As Integer
+    Private Property BiayaJabatan As Integer
+    Private Property JumlahTanggungan As Tanggungan.JumlahTanggungan
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         MyBase.Width = 418
     End Sub
@@ -68,6 +73,8 @@
         iPenghasilanKenaPajak = roundDownToThousands(iPenghasilanNetto - iTotalPTKP)
         iPajak = HitungPajakPenghasilan(iPenghasilanKenaPajak)
 
+        JumlahTanggungan = byteJumlahAnak
+
         'MessageBox.Show("Nih Netto Lu " & iPenghasilanNetto.ToString("N0"))
         'MessageBox.Show("Nih PTKP Lu " & iTotalPTKP.ToString("N0"))
         'MessageBox.Show("Nih PKP Lu " & iPenghasilanKenaPajak.ToString("N0"))
@@ -94,6 +101,10 @@
         Else
             iBiayaJabatan = iPenghasilanBrutoSetahun * TARIF_BIAYA_JABATAN
         End If
+
+        BiayaJabatan = iBiayaJabatan
+        PenghasilanBrutoSetahun = iPenghasilanBrutoSetahun
+        IuranPensiun = iIuran * 12
 
         Return iPenghasilanBrutoSetahun - iBiayaJabatan - (iIuran * 12)
 
@@ -188,6 +199,23 @@
             MessageBox.Show("Hanya menerima angka", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             txtIuranPensiun.Text = 0
         End If
+    End Sub
+
+    Private Sub btnCetakDokumen_MouseClick(sender As Object, e As MouseEventArgs) Handles btnCetakDokumen.MouseClick
+        Dim customDialog As New FormCetakDokumen()
+        ' Pass value for printing
+        customDialog.PenghasilanBruto = PenghasilanBrutoSetahun
+        customDialog.IuranPensiun = IuranPensiun
+        customDialog.BiayaJabatan = BiayaJabatan
+        customDialog.StatusKawin = radioKawin.Checked
+        customDialog.JumlahTanggungan = JumlahTanggungan
+        customDialog.PenghasilanNetto = lblPlaceholderNetto.Text
+        customDialog.TotalPTKP = lblPlaceholderPTKP.Text
+        customDialog.PenghasilanKenaPajak = lblPlaceholderPkp.Text
+        customDialog.PajakTerutang = lblPlaceholderTerutang.Text
+        customDialog.PajakTerutangSebulan = lblPlaceholderTerutangBulan.Text
+
+        customDialog.ShowDialog()
     End Sub
 End Class
 

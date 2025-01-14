@@ -60,6 +60,7 @@ Partial Class lblNetto
         Label10 = New Label()
         Label12 = New Label()
         Label13 = New Label()
+        btnCetakDokumen = New Button()
         gboxStatus.SuspendLayout()
         gboxTanggungan.SuspendLayout()
         SuspendLayout()
@@ -121,7 +122,7 @@ Partial Class lblNetto
         radioTidakKawin.AutoSize = True
         radioTidakKawin.Location = New Point(95, 38)
         radioTidakKawin.Name = "radioTidakKawin"
-        radioTidakKawin.Size = New Size(88, 19)
+        radioTidakKawin.Size = New Size(89, 19)
         radioTidakKawin.TabIndex = 8
         radioTidakKawin.TabStop = True
         radioTidakKawin.Text = "Tidak Kawin"
@@ -198,7 +199,7 @@ Partial Class lblNetto
         ' btnHitung
         ' 
         btnHitung.BackColor = Color.LightBlue
-        btnHitung.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        btnHitung.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         btnHitung.ForeColor = Color.DarkSlateGray
         btnHitung.Location = New Point(12, 476)
         btnHitung.Name = "btnHitung"
@@ -210,7 +211,7 @@ Partial Class lblNetto
         ' lblBruto
         ' 
         lblBruto.AutoSize = True
-        lblBruto.Font = New Font("Segoe UI", 9.0F, FontStyle.Italic)
+        lblBruto.Font = New Font("Segoe UI", 9F, FontStyle.Italic)
         lblBruto.ForeColor = SystemColors.ControlDark
         lblBruto.Location = New Point(134, 130)
         lblBruto.Name = "lblBruto"
@@ -221,7 +222,7 @@ Partial Class lblNetto
         ' lblOpsional
         ' 
         lblOpsional.AutoSize = True
-        lblOpsional.Font = New Font("Segoe UI", 9.0F, FontStyle.Italic)
+        lblOpsional.Font = New Font("Segoe UI", 9F, FontStyle.Italic)
         lblOpsional.ForeColor = SystemColors.ControlDark
         lblOpsional.Location = New Point(141, 194)
         lblOpsional.Name = "lblOpsional"
@@ -232,7 +233,7 @@ Partial Class lblNetto
         ' lblVersion
         ' 
         lblVersion.AutoSize = True
-        lblVersion.Font = New Font("Segoe UI", 9.0F, FontStyle.Italic)
+        lblVersion.Font = New Font("Segoe UI", 9F, FontStyle.Italic)
         lblVersion.ForeColor = SystemColors.ControlDark
         lblVersion.Location = New Point(12, 554)
         lblVersion.Name = "lblVersion"
@@ -243,7 +244,7 @@ Partial Class lblNetto
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 9.0F, FontStyle.Italic)
+        Label1.Font = New Font("Segoe UI", 9F, FontStyle.Italic)
         Label1.ForeColor = SystemColors.ControlDark
         Label1.Location = New Point(12, 569)
         Label1.Name = "Label1"
@@ -254,7 +255,7 @@ Partial Class lblNetto
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 9.0F, FontStyle.Italic)
+        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Italic)
         Label2.ForeColor = SystemColors.ControlDark
         Label2.Location = New Point(12, 584)
         Label2.Name = "Label2"
@@ -265,7 +266,7 @@ Partial Class lblNetto
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         Label3.Location = New Point(467, 130)
         Label3.Name = "Label3"
         Label3.Size = New Size(175, 15)
@@ -285,7 +286,7 @@ Partial Class lblNetto
         ' lblPlaceholderNetto
         ' 
         lblPlaceholderNetto.AutoSize = True
-        lblPlaceholderNetto.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblPlaceholderNetto.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblPlaceholderNetto.ForeColor = SystemColors.ControlText
         lblPlaceholderNetto.ImageAlign = ContentAlignment.MiddleRight
         lblPlaceholderNetto.Location = New Point(780, 165)
@@ -301,14 +302,14 @@ Partial Class lblNetto
         lblPTKP.ForeColor = SystemColors.ControlDarkDark
         lblPTKP.Location = New Point(467, 194)
         lblPTKP.Name = "lblPTKP"
-        lblPTKP.Size = New Size(162, 15)
+        lblPTKP.Size = New Size(163, 15)
         lblPTKP.TabIndex = 22
         lblPTKP.Text = "Penghasilan Tidak Kena Pajak"
         ' 
         ' lblPlaceholderPTKP
         ' 
         lblPlaceholderPTKP.AutoSize = True
-        lblPlaceholderPTKP.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblPlaceholderPTKP.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblPlaceholderPTKP.ForeColor = SystemColors.ControlText
         lblPlaceholderPTKP.Location = New Point(780, 194)
         lblPlaceholderPTKP.Name = "lblPlaceholderPTKP"
@@ -330,7 +331,7 @@ Partial Class lblNetto
         ' lblPlaceholderPkp
         ' 
         lblPlaceholderPkp.AutoSize = True
-        lblPlaceholderPkp.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblPlaceholderPkp.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblPlaceholderPkp.ForeColor = SystemColors.ControlText
         lblPlaceholderPkp.Location = New Point(780, 224)
         lblPlaceholderPkp.Name = "lblPlaceholderPkp"
@@ -345,14 +346,14 @@ Partial Class lblNetto
         Label5.ForeColor = SystemColors.ControlDarkDark
         Label5.Location = New Point(467, 299)
         Label5.Name = "Label5"
-        Label5.Size = New Size(137, 15)
+        Label5.Size = New Size(138, 15)
         Label5.TabIndex = 26
         Label5.Text = "Pajak Terutang (setahun)"
         ' 
         ' lblPlaceholderTerutang
         ' 
         lblPlaceholderTerutang.AutoSize = True
-        lblPlaceholderTerutang.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblPlaceholderTerutang.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblPlaceholderTerutang.ForeColor = SystemColors.ControlText
         lblPlaceholderTerutang.Location = New Point(780, 299)
         lblPlaceholderTerutang.Name = "lblPlaceholderTerutang"
@@ -367,14 +368,14 @@ Partial Class lblNetto
         Label6.ForeColor = SystemColors.ControlDarkDark
         Label6.Location = New Point(467, 326)
         Label6.Name = "Label6"
-        Label6.Size = New Size(145, 15)
+        Label6.Size = New Size(146, 15)
         Label6.TabIndex = 28
         Label6.Text = "Pajak Terutang (per bulan)"
         ' 
         ' lblPlaceholderTerutangBulan
         ' 
         lblPlaceholderTerutangBulan.AutoSize = True
-        lblPlaceholderTerutangBulan.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblPlaceholderTerutangBulan.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblPlaceholderTerutangBulan.ForeColor = SystemColors.ControlText
         lblPlaceholderTerutangBulan.Location = New Point(780, 326)
         lblPlaceholderTerutangBulan.Name = "lblPlaceholderTerutangBulan"
@@ -389,14 +390,14 @@ Partial Class lblNetto
         Label7.ForeColor = SystemColors.ControlDarkDark
         Label7.Location = New Point(467, 354)
         Label7.Name = "Label7"
-        Label7.Size = New Size(65, 15)
+        Label7.Size = New Size(66, 15)
         Label7.TabIndex = 30
         Label7.Text = "Tarif Efektif"
         ' 
         ' lblPlaceholderTarifEfektif
         ' 
         lblPlaceholderTarifEfektif.AutoSize = True
-        lblPlaceholderTarifEfektif.Font = New Font("Segoe UI Semibold", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblPlaceholderTarifEfektif.Font = New Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblPlaceholderTarifEfektif.ForeColor = SystemColors.ControlText
         lblPlaceholderTarifEfektif.Location = New Point(780, 354)
         lblPlaceholderTarifEfektif.Name = "lblPlaceholderTarifEfektif"
@@ -408,7 +409,7 @@ Partial Class lblNetto
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI", 9.0F, FontStyle.Italic)
+        Label8.Font = New Font("Segoe UI", 9F, FontStyle.Italic)
         Label8.ForeColor = SystemColors.ControlDark
         Label8.Location = New Point(467, 476)
         Label8.Name = "Label8"
@@ -419,7 +420,7 @@ Partial Class lblNetto
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 9.0F, FontStyle.Italic)
+        Label9.Font = New Font("Segoe UI", 9F, FontStyle.Italic)
         Label9.ForeColor = SystemColors.ControlDark
         Label9.Location = New Point(467, 496)
         Label9.Name = "Label9"
@@ -430,7 +431,7 @@ Partial Class lblNetto
         ' lblDisclaimer
         ' 
         lblDisclaimer.AutoSize = True
-        lblDisclaimer.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblDisclaimer.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         lblDisclaimer.ForeColor = Color.Brown
         lblDisclaimer.Location = New Point(12, 9)
         lblDisclaimer.Name = "lblDisclaimer"
@@ -454,7 +455,7 @@ Partial Class lblNetto
         Label10.ForeColor = SystemColors.ControlDarkDark
         Label10.Location = New Point(11, 49)
         Label10.Name = "Label10"
-        Label10.Size = New Size(115, 15)
+        Label10.Size = New Size(116, 15)
         Label10.TabIndex = 36
         Label10.Text = "   atas Pegawai Tetap"
         ' 
@@ -464,7 +465,7 @@ Partial Class lblNetto
         Label12.ForeColor = SystemColors.ControlDarkDark
         Label12.Location = New Point(12, 69)
         Label12.Name = "Label12"
-        Label12.Size = New Size(285, 15)
+        Label12.Size = New Size(286, 15)
         Label12.TabIndex = 37
         Label12.Text = "- Status Perhitungan Harta Terpisah ditiadakan untuk"
         ' 
@@ -478,11 +479,21 @@ Partial Class lblNetto
         Label13.TabIndex = 38
         Label13.Text = "memudahkan simulasi perhitungan"
         ' 
+        ' btnCetakDokumen
+        ' 
+        btnCetakDokumen.Location = New Point(467, 411)
+        btnCetakDokumen.Name = "btnCetakDokumen"
+        btnCetakDokumen.Size = New Size(125, 33)
+        btnCetakDokumen.TabIndex = 39
+        btnCetakDokumen.Text = "Cetak Dokumen"
+        btnCetakDokumen.UseVisualStyleBackColor = True
+        ' 
         ' lblNetto
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(911, 619)
+        Controls.Add(btnCetakDokumen)
         Controls.Add(Label13)
         Controls.Add(Label12)
         Controls.Add(Label10)
@@ -516,6 +527,7 @@ Partial Class lblNetto
         Controls.Add(txtPenghasilan)
         Controls.Add(lblPenghasilan)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "lblNetto"
         Text = "Kalkulator Pajak Penghasilan Pegawai Tetap"
         gboxStatus.ResumeLayout(False)
@@ -565,5 +577,6 @@ Partial Class lblNetto
     Friend WithEvents Label10 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
+    Friend WithEvents btnCetakDokumen As Button
 
 End Class
