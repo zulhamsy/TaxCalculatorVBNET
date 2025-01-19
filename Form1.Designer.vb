@@ -122,7 +122,7 @@ Partial Class lblNetto
         radioTidakKawin.AutoSize = True
         radioTidakKawin.Location = New Point(95, 38)
         radioTidakKawin.Name = "radioTidakKawin"
-        radioTidakKawin.Size = New Size(89, 19)
+        radioTidakKawin.Size = New Size(88, 19)
         radioTidakKawin.TabIndex = 8
         radioTidakKawin.TabStop = True
         radioTidakKawin.Text = "Tidak Kawin"
@@ -239,7 +239,7 @@ Partial Class lblNetto
         lblVersion.Name = "lblVersion"
         lblVersion.Size = New Size(88, 15)
         lblVersion.TabIndex = 16
-        lblVersion.Text = "v.1.0.17.12.2024"
+        lblVersion.Text = "v.1.0.19.01.2025"
         ' 
         ' Label1
         ' 
@@ -302,7 +302,7 @@ Partial Class lblNetto
         lblPTKP.ForeColor = SystemColors.ControlDarkDark
         lblPTKP.Location = New Point(467, 194)
         lblPTKP.Name = "lblPTKP"
-        lblPTKP.Size = New Size(163, 15)
+        lblPTKP.Size = New Size(162, 15)
         lblPTKP.TabIndex = 22
         lblPTKP.Text = "Penghasilan Tidak Kena Pajak"
         ' 
@@ -346,7 +346,7 @@ Partial Class lblNetto
         Label5.ForeColor = SystemColors.ControlDarkDark
         Label5.Location = New Point(467, 299)
         Label5.Name = "Label5"
-        Label5.Size = New Size(138, 15)
+        Label5.Size = New Size(137, 15)
         Label5.TabIndex = 26
         Label5.Text = "Pajak Terutang (setahun)"
         ' 
@@ -368,7 +368,7 @@ Partial Class lblNetto
         Label6.ForeColor = SystemColors.ControlDarkDark
         Label6.Location = New Point(467, 326)
         Label6.Name = "Label6"
-        Label6.Size = New Size(146, 15)
+        Label6.Size = New Size(145, 15)
         Label6.TabIndex = 28
         Label6.Text = "Pajak Terutang (per bulan)"
         ' 
@@ -390,7 +390,7 @@ Partial Class lblNetto
         Label7.ForeColor = SystemColors.ControlDarkDark
         Label7.Location = New Point(467, 354)
         Label7.Name = "Label7"
-        Label7.Size = New Size(66, 15)
+        Label7.Size = New Size(65, 15)
         Label7.TabIndex = 30
         Label7.Text = "Tarif Efektif"
         ' 
@@ -455,7 +455,7 @@ Partial Class lblNetto
         Label10.ForeColor = SystemColors.ControlDarkDark
         Label10.Location = New Point(11, 49)
         Label10.Name = "Label10"
-        Label10.Size = New Size(116, 15)
+        Label10.Size = New Size(115, 15)
         Label10.TabIndex = 36
         Label10.Text = "   atas Pegawai Tetap"
         ' 
@@ -465,7 +465,7 @@ Partial Class lblNetto
         Label12.ForeColor = SystemColors.ControlDarkDark
         Label12.Location = New Point(12, 69)
         Label12.Name = "Label12"
-        Label12.Size = New Size(286, 15)
+        Label12.Size = New Size(285, 15)
         Label12.TabIndex = 37
         Label12.Text = "- Status Perhitungan Harta Terpisah ditiadakan untuk"
         ' 

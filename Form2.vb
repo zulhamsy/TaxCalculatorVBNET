@@ -1,7 +1,11 @@
 ﻿Imports System.ComponentModel.DataAnnotations
 Imports System.Drawing.Printing
+Imports System.Runtime.InteropServices
 
 Public Class FormCetakDokumen
+    <DllImport("kernel32.dll")>
+    Private Shared Function AllocConsole() As Boolean
+    End Function
     Public Property PenghasilanBruto As Integer
     Public Property IuranPensiun As Integer
     Public Property BiayaJabatan As Integer
@@ -17,6 +21,17 @@ Public Class FormCetakDokumen
     Dim PPD As New PrintPreviewDialog
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cmbMasaPajak.SelectedIndex = 0
+        AllocConsole()
+        Console.WriteLine("Console allocated successfully")
+
+        ' For 1 to 12, print the monthly tax
+        'For i As Integer = 0 To 11
+        '    Console.WriteLine("Bulan: " & (i + 1).ToString() & " - Pajak: Rp. " & PajakTerutangSebulan)
+        'Next
+        ConsoleLogPajak(PajakTerutangSebulan)
+
+        Console.WriteLine("Press any key to continue...")
+        Console.ReadLine()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -94,5 +109,12 @@ Public Class FormCetakDokumen
             .PaperSize = New PaperSize("Custom", 250, 500)
         }
         PD.DefaultPageSettings = PageSetup
+    End Sub
+
+    Private Sub ConsoleLogPajak(ByRef NominalPajak As String)
+        ' For 1 to 12, print the monthly tax
+        For i As Integer = 0 To 11
+            Console.WriteLine("Bulan: " & (i + 1).ToString() & " - Pajak: Rp. " & PajakTerutangSebulan)
+        Next
     End Sub
 End Class
